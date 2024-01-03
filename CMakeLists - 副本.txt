@@ -1,0 +1,23 @@
+cmake_minimum_required(VERSION 3.19)
+project(unix_server CC)
+
+set(CMAKE_CXX_STANDARD 11)
+
+set(CMAKE_SYSTEM_NAME Android)
+set(CMAKE_SYSTEM_VERSION 24)
+set(CMAKE_ANDROID_ARCH_ABI arm64-v8a)
+set(CMAKE_ANDROID_NDK C:\\Users\\N25476\\AppData\\Local\\Android\\Sdk\\ndk\\22.0.7026061)
+set(CMAKE_ANDROID_STL_TYPE gnustl_static)
+
+set(CMAKE_ANDROID_NDK_TOOLCHAIN_VERSION clang)
+
+set(CMAKE_C_COMPILER C:\\Users\\N25476\\AppData\\Local\\Android\\Sdk\\ndk\\22.0.7026061\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\armv7a-linux-androideabi24-clang)
+set(CMAKE_CPP_COMPILER C:\\Users\\N25476\\AppData\\Local\\Android\\Sdk\\ndk\\22.0.7026061\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\armv7a-linux-androideabi24-clang)
+#set(CMAKE_C_COMPILER C:\\Users\\N25476\\AppData\\Local\\Android\\Sdk\\ndk\\22.0.7026061\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\x86_64-linux-android24-clang)
+#set(CMAKE_CPP_COMPILER C:\\Users\\N25476\\AppData\\Local\\Android\\Sdk\\ndk\\22.0.7026061\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\x86_64-linux-android24-clang)
+
+set(CMAKE_C_FLAGS  "${CMAKE_C_FLAGS} -g")
+set(CMAKE_CPP_FLAGS  "${CMAKE_CPP_FLAGS} -g")
+
+
+add_executable(unix_server main.cpp)
